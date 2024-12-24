@@ -1,0 +1,8 @@
+const titulo = document.querySelector(".titulo");
+const botao = document.getElementById("botao");
+
+botao.addEventListener("click", () =>{
+  const frase = ["É importante agradecer pelo hoje sem nunca desistir do amanhã!", "Lute. Acredite. Conquiste. Perca. Deseje. Espere. Alcance. Invada. Caia. Seja tudo o quiser ser, mas, acima de tudo, seja você sempre.", "Quem cultiva gratidão é capaz de realizar sonhos que parecem inalcançáveis!", "Se expressarmos gratidão pelo que temos, teremos mais pelo que expressar gratidão.", "Desejar algo maior pra sua vida não significa que você está insatisfeito com o que tem.", "Só tenho a agradecer a cada um dos desafios que me trouxeram até aqui, que me fizeram crescer e aprender tantas coisas!", "Tenho uma profunda gratidão por cada lição que aprendi no passado. Afinal, foram elas que me permitiram chegar até aqui!", "A vida reserva surpresas maravilhosas para todos aqueles que cultivam a gratidão!", "Com o coração cheio de gratidão, sei que sou capaz de superar qualquer obstáculo que a vida apresentar!", "A gratidão é uma grande aliada do sucesso!", "Só tenho gratidão por tudo o que enfrentei até chegar aqui. E também muita esperança no coração por todos os desafios que ainda virão!", "Não permito que nenhuma reflexão filosófica me tire a alegria das coisas simples da vida.", "Somos feitos de carne, mas temos de viver como se fôssemos de ferro.", "O pensamento é o ensaio da ação.", "Podemos nos defender de um ataque, mas somos indefesos a um elogio."];
+  const aleatorio = Math.round(Math.random() * (15 - 5) + 5);
+  titulo.innerText = frase[aleatorio];
+})
